@@ -5,19 +5,19 @@
 replicaCount: 1
 
 image:
-  repository: docker202020/myrepo
-  tag: v1
+  repository: docker202020/mysqldb
+  tag: stable
   pullPolicy: IfNotPresent
 
 service:
-  type: ClusterIP
+  type: NodePort
   port: 3306
 
 ingress:
   enabled: false
   path: /
   hosts:
-    - vd-database.inmbzicp6119.in.dst.ibm.com
+    - database.connect
   annotations: 
     kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
@@ -31,6 +31,7 @@ resources:
   limits:
    cpu: 1
    memory: 1Gi
+
 
 MYSQL_ROOT_PASSWORD:
   value: admin

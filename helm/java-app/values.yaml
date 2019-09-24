@@ -1,9 +1,9 @@
 
   replicaCount: 1
   image:
-    repository: docker202020/java
-    tag: latest
-    pullPolicy: Always
+    repository: docker202020/java-stable
+    tag: v1
+    pullPolicy: IfNotPresent
   service:
     type: NodePort
     port: 2206 

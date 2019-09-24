@@ -17,7 +17,7 @@ public class Database
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://mysql-service:2206/sample?autoReconnect=true&useSSL=false","root","admin");
+			con=DriverManager.getConnection("jdbc:mysql://prod-mysqldb:3306/sample?autoReconnect=true&useSSL=false","root","admin");
 		}
 		catch(Exception e)
 		{
