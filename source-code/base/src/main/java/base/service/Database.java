@@ -17,7 +17,8 @@ public class Database
 		try
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://prod-mysqldb:3306/sample?autoReconnect=true&useSSL=false","root","admin");
+			con=DriverManager.getConnection("jdbc:mysql://192.168.99.117:3306/sample?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","root","admin");
+			 
 		}
 		catch(Exception e)
 		{

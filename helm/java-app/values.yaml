@@ -1,8 +1,8 @@
 
   replicaCount: 1
   image:
-    repository: docker202020/java-stable
-    tag: v1
+    repository: java
+    tag: stablev3
     pullPolicy: IfNotPresent
   service:
     type: NodePort
