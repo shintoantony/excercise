@@ -1,5 +1,5 @@
 FROM docker202020/java-base:v1
-MAINTAINER shinto
+MAINTAINER shinto Antony
 
 COPY base.jar /home
 RUN chmod 755 /home/base.jar
