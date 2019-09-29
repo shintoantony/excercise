@@ -42,7 +42,7 @@ spec:
      spec:
        containers:
        - name: mysql-container
-         image: docker202020/myrepo:v1
+         image: docker202020/mysqldb:stable
          ports:
          - containerPort: 3306
          volumeMounts:

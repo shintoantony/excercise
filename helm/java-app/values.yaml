@@ -1,12 +1,12 @@
 
   replicaCount: 1
   image:
-    repository: java
-    tag: stablev3
+    repository: java-base
+    tag: v2
     pullPolicy: IfNotPresent
   service:
     type: NodePort
-    port: 2206 
+    port: 2206
   ingress:
     enabled: false
     path: /

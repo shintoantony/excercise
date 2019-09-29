@@ -29,7 +29,7 @@ spec:
      spec:
        containers:
        - name: java-container
-         image: docker202020/java:latest
+         image: java-base/v3
          ports:
          - containerPort: 2206
 ---

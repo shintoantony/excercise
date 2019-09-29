@@ -20,7 +20,7 @@ public class jcontroller
     	try
     	{
     		status=db.getDBStatus();
-    		if (status.equals("success"))
+       		if (status.equals("success"))
     		{
     			status_op="connected";
     			
