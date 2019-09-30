@@ -18,7 +18,7 @@ spec:
     - host: {{ $host }}
       http:
         paths:
-          - path: /status
+                - path: /status
             backend:
               serviceName: {{ $serviceName }}
               servicePort: {{ $servicePort }}
