@@ -9,9 +9,9 @@
     port: 2206
   ingress:
     enabled: false
-    path: /
+    path: / 
     hosts:
-      -  java-connect.info
+      - jm.example.com
     annotations:
       kubernetes.io/ingress.class: nginx
       # kubernetes.io/tls-acme: "true"
